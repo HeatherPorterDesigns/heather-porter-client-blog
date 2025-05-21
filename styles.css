@@ -1,0 +1,532 @@
+/* =========================
+   Layout & Grid
+   ========================= */
+body {
+    display: grid;
+    grid-template-areas:
+        "header header header header"
+        "aside1 main main aside2"
+        "footer footer footer footer";
+    gap: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* =========================
+   Header
+   ========================= */
+header {
+    position: relative;
+    background: #9A1750;
+    grid-area: header;
+}
+
+.header-flex {
+    display: flex;
+    position: relative;
+}
+
+header a.fa-cart-shopping {
+    margin-left: 20px;
+    font-size: 18px;
+    z-index: 1;
+    color: #E3E2DF;
+}
+
+header a.fa-magnifying-glass {
+    position: relative;
+    margin-left: 20px;
+    color: #E3E2DF;
+}
+
+header figure img,
+header figure img.header-logo {
+    max-width: 100%;
+    max-height: 320px;
+    object-fit: contain;
+    display: block;
+    align-items: left;
+    position: absolute;
+    top: 30px;
+    left: 60px;
+}
+
+header h1 {
+    font-family: 'Alegreya', serif;
+    color: #E3E2DF;
+    font-size: 80px;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    letter-spacing: 4px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.header-content {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.header-subtitle {
+    font-family: 'Alegreya', serif;
+    color: #E3E2DF;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.header-description {
+    font-family: 'Alegreya', serif;
+    color: #E3E2DF;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    gap: 30px;
+    margin-right: 30px;
+    /* Fallback for older browsers */
+    display: flex;
+}
+
+nav ul li a {
+    color: #E3E2DF;
+    font-family: 'Cinzel', serif;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    color: #ee4c7c;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+
+.header-icons a {
+    color: #E3E2DF;
+    font-size: 22px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.header-icons a:hover,
+.header-icons a:focus {
+    color: #ee4c7c;
+}
+
+
+.header-icons i {
+    vertical-align: middle;
+}
+
+/* =========================
+   Main Section
+   ========================= */
+main {
+    background-image: url(images/pink-flowers.png);
+    grid-area: main;
+    background-color: #e3afbc;
+    background-position: center;
+    background-repeat: repeat;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    border-left: 5px solid #9A1750;
+    border-right: 5px solid #9A1750;
+}
+
+/* =========================
+   Aside 1 & Aside 2
+   ========================= */
+.aside1 {
+    background-color: #ee4c7c;
+    grid-area: aside1;
+    height: auto;
+    border-left: 5px solid #9A1750;
+    padding: 10px;
+}
+
+.aside2 {
+    background-color: #ee4c7c;
+    grid-area: aside2;
+    height: auto;
+    border-right: 5px solid #9A1750;
+    padding: 10px;
+}
+
+.aside1 .aside1-box1img,
+.aside1 .aside1-box2img,
+.aside1 .aside1-box3img,
+.aside1 .aside1-box4img {
+    width: 350px;
+    height: 330px;
+    border: 5px solid #9A1750;
+    background-color: #e3afdc;
+    position: relative;
+    box-sizing: border-box;
+    margin: 50px auto;
+    padding: 10px;
+}
+
+.aside2 .aside2-box1img,
+.aside2 .aside2-box2img,
+.aside2 .aside2-box3img,
+.aside2 .aside2-box4img {
+    width: 350px;
+    height: 400px;
+    border: 5px solid #9A1750;
+    background-color: #e3afdc;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 50px auto;
+    padding: 10px;
+}
+
+.aside1 .aside1-box1img img,
+.aside1 .aside1-box2img img,
+.aside1 .aside1-box3img img,
+.aside1 .aside1-box4img img {
+    float: left;
+    margin: 2px;
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+    border: 2px solid #9A1750;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.aside2 .aside2-box1img img,
+.aside2 .aside2-box2img img,
+.aside2 .aside2-box3img img,
+.aside2 .aside2-box4img img {
+    float: right;
+    margin: 0 5px 5px 0;
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+    border: 2px solid #9A1750;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.aside1 h3,
+.aside2 h3 {
+    font-family: 'Alegreya', serif;
+    font-size: 20px;
+    color: #9A1750;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    overflow-wrap: anywhere;
+    position: static;
+    width: auto;
+    margin: 0 0 10px 0;
+    border: 2px solid #9A1750;
+    background-color: #e3afbc;
+    display: block;
+    border-radius: 5px;
+    padding: 5px 15px;
+    box-sizing: border-box;
+    float: none;
+    clear: none;
+}
+
+.aside1 p,
+.aside2 p {
+    font-family: 'Cinzel', serif;
+    font-size: 12px;
+    color: #9A1750;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    overflow-wrap: anywhere;
+    display: block;
+    float: none;
+    clear: none;
+}
+
+.aside1-more-link {
+    display: block;
+    text-align: center;
+    margin: 5px 0 10px 5px;
+    font-size: 12px;
+    color: #9A1750;
+    text-decoration: underline;
+    font-family: 'Cinzel', serif;
+    transition: color 0.2s;
+}
+
+.aside1-more-link:hover {
+    color: #ee4c7c;
+    text-decoration: none;
+}
+
+/* =========================
+   Footer
+   ========================= */
+footer {
+    background: #9A1750;
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 20px;
+    min-height: 200px; /* Reduced from 300px */
+}
+
+/* Left Column - Footer Links */
+.footer-links-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 25%;
+    padding-left: 20px;
+    padding-top: 40px;
+}
+
+.footer-link {
+    display: block;
+    color: #E3E2DF;
+    margin-bottom: 8px; /* Reduced from 15px */
+    text-align: left;
+    font-family: 'Cinzel', serif;
+    font-size: 16px; /* Reduced from 18px */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: #ee4c7c;
+}
+
+/* Middle Column - Main Content */
+.footer-main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+footer h1 {
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    color: #E3E2DF;
+    font-size: 40px; /* Reduced from 40px */
+    margin-bottom: 10px; /* Reduced from 20px */
+}
+
+footer ul {
+    margin: 0 0 10px 0; /* Reduced from 20px */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    gap: 12px; /* Reduced from 15px */
+}
+
+footer li {
+    display: inline-block;
+}
+
+footer a {
+    display: inline-block;
+    text-align: center;
+    color: #E3E2DF;
+    font-family: 'Cinzel', serif;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a i {
+    margin: 0 8px;
+    font-size: 18px; /* Reduced from 20px */
+    color: #E3E2DF;
+    display: inline-block;
+}
+
+footer a:hover,
+.footer-link:hover {
+    color: #ee4c7c;
+}
+
+footer a:hover i {
+    color: #ee4c7c;
+}
+
+footer p {
+    text-align: center;
+    margin: 5px 0; /* Reduced from 10px */
+    font-family: 'Cinzel', serif;
+    color: #E3E2DF;
+    font-size: 14px; /* Added smaller font size */
+}
+
+/* Right Column - Footer Buttons */
+.footer-buttons-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    gap: 10px; /* Reduced from 15px */
+}
+
+.footer-buttons-vertical .button-one,
+.footer-buttons-vertical .button-two {
+    width: 160px; /* Reduced from 180px */
+    background-color: #e3afbc;
+    color: #9A1750;
+    border: 2px solid #E3E2DF;
+    border-radius: 20px;
+    padding: 8px 15px; /* Reduced from 10px 20px */
+    font-size: 14px; /* Reduced from 16px */
+    cursor: pointer;
+    transition: all 0.5s ease;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    text-decoration: none;
+}
+
+.footer-buttons-vertical .button-one:hover,
+.footer-buttons-vertical .button-two:hover {
+    background-color: #9A1750;
+    color: #E3AFdc;
+}
+/* =========================
+   Main Content Boxes
+   ========================= */
+.box-one,
+.box-two,
+.box-three {
+    position: relative;
+    width: 80%;
+    height: auto;
+    border: 5px solid #9A1750;
+    background-color: #e3afdc;
+    margin: 80px auto;
+    font-family: 'Alegreya', serif;
+    padding: 10px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.box-one h1,
+.box-two h1,
+.box-three h1 {
+    position: relative;
+    text-align: center;
+    width: 95%;
+    margin: 0 auto 10px auto;
+    border: 4px solid #9A1750;
+    background-color: #e3afbc;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 8px;
+    font: bold 40px 'Alegreya', serif;
+}
+
+.box-one img,
+.box-two img,
+.box-three img {
+    float: right;
+    margin: 5px;
+    width: 35%;
+    height: auto;
+    object-fit: cover;
+    border: 5px solid #9A1750;
+}
+
+.box-one p,
+.box-two p,
+.box-three p {
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    font-size: 18px;
+    color: #9A1750;
+}
+
+/* =========================
+   Headings
+   ========================= */
+h1 {
+    font-family: 'Alegreya', serif;
+    font-size: 50px;
+    color: #E3E2DF;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.aside1 h1,
+.aside2 h1 {
+    font-family: 'Alegreya', serif;
+    text-align: center;
+    font-size: 50px;
+    color: #E3E2DF;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    position: relative;
+    width: auto;
+    margin: 0 auto 10px auto;
+    border: 4px solid #9A1750;
+    background-color: #e3afbc;
+    display: block;
+    box-sizing: border-box;
+    padding: 5px 15px;
+    border-radius: 8px;
+    align-items: center;
+}
