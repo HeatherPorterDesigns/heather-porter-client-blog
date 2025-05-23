@@ -318,7 +318,7 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 25px 20px;
-    min-height: 200px; /* Reduced from 300px */
+    min-height: 200px; 
 }
 
 /* Left Column - Footer Links */
@@ -334,10 +334,10 @@ footer {
 .footer-link {
     display: block;
     color: #E3E2DF;
-    margin-bottom: 8px; /* Reduced from 15px */
+    margin-bottom: 8px; 
     text-align: left;
     font-family: 'Cinzel', serif;
-    font-size: 16px; /* Reduced from 18px */
+    font-size: 16px; 
     text-decoration: none;
     transition: color 0.3s;
 }
