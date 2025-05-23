@@ -358,18 +358,18 @@ footer h1 {
     text-align: center;
     font-family: 'Cinzel', serif;
     color: #E3E2DF;
-    font-size: 40px; /* Reduced from 40px */
-    margin-bottom: 10px; /* Reduced from 20px */
+    font-size: 40px; 
+    margin-bottom: 10px; 
 }
 
 footer ul {
-    margin: 0 0 10px 0; /* Reduced from 20px */
+    margin: 0 0 10px 0;
     width: 100%;
     display: flex;
     justify-content: center;
     padding: 0;
     list-style: none;
-    gap: 12px; /* Reduced from 15px */
+    gap: 12px; 
 }
 
 footer li {
@@ -388,7 +388,7 @@ footer a {
 
 footer a i {
     margin: 0 8px;
-    font-size: 18px; /* Reduced from 20px */
+    font-size: 18px; 
     color: #E3E2DF;
     display: inline-block;
 }
@@ -404,10 +404,10 @@ footer a:hover i {
 
 footer p {
     text-align: center;
-    margin: 5px 0; /* Reduced from 10px */
+    margin: 5px 0;
     font-family: 'Cinzel', serif;
     color: #E3E2DF;
-    font-size: 14px; /* Added smaller font size */
+    font-size: 14px; 
 }
 
 /* Right Column - Footer Buttons */
@@ -417,18 +417,18 @@ footer p {
     align-items: center;
     justify-content: center;
     width: 25%;
-    gap: 10px; /* Reduced from 15px */
+    gap: 10px; 
 }
 
 .footer-buttons-vertical .button-one,
 .footer-buttons-vertical .button-two {
-    width: 160px; /* Reduced from 180px */
+    width: 160px; 
     background-color: #e3afbc;
     color: #9A1750;
     border: 2px solid #E3E2DF;
     border-radius: 20px;
-    padding: 8px 15px; /* Reduced from 10px 20px */
-    font-size: 14px; /* Reduced from 16px */
+    padding: 8px 15px; 
+    font-size: 14px;
     cursor: pointer;
     transition: all 0.5s ease;
     text-align: center;
@@ -464,11 +464,11 @@ footer p {
 .box-three h1 {
     position: relative;
     text-align: center;
-    width: 95%;
+    width: 90%;
     margin: 0 auto 10px auto;
     border: 4px solid #9A1750;
     background-color: #e3afbc;
-    display: inline-block;
+    display: block;
     padding: 5px 15px;
     border-radius: 8px;
     font: bold 40px 'Alegreya', serif;
